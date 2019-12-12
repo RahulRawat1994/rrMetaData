@@ -1,6 +1,6 @@
 {
   "name": "rrmetadata",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin for you meta data handling. It provide meta data crud functionality and easy implementation",
   "main": "src/index.js",
   "scripts": {
