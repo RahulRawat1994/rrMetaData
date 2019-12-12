@@ -16,6 +16,8 @@ $ npm instal rrmetadata
 import MetaData from 'metadata';
 or
 const MetaData = require('metadata');
+
+const metaData = MetaData.getInstance();
 ```
 
 ## Functions
