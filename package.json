@@ -1,0 +1,23 @@
+{
+  "name": "rrmetadata",
+  "version": "0.0.1",
+  "description": "A plugin for you meta data handling. It provide meta data crud functionality and easy implementation",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "metadata",
+    "nodejs",
+    "mongoose",
+    "meta"
+  ],
+  "author": "Rahul Rawat <rr904196@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parent-require": "^1.0.0"
+  }
+}
