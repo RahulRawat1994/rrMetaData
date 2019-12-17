@@ -19,5 +19,10 @@
   "license": "MIT",
   "dependencies": {
     "parent-require": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahuiRawat1994/rrMetaData.git"
+  },
+  "homepage": "https://github.com/RahuiRawat1994/rrMetaData"
 }

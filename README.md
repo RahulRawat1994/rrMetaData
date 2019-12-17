@@ -25,8 +25,8 @@ const metaData = MetaData.getInstance();
 #### insert(key, vlaue) 
  To set a new metadata in the database
 ```js
-MetaData.insert('key','value');
-MetaData.insert('foo','bar');
+meteData.insert('key','value');
+meteData.insert('foo','bar');
 
 
 - Insert Json data
@@ -36,7 +36,7 @@ const address={
    state: 'Punjab',
    country: 'India'
 }
-MetaData.insert('personal_address',address);
+meteData.insert('personal_address',address);
 ```
 
 
@@ -44,7 +44,7 @@ MetaData.insert('personal_address',address);
 get latest meta value by using key
 
 ```js
-MetaData.get('foo');
+meteData.get('foo');
 >> bar
 ```
 
@@ -52,10 +52,10 @@ MetaData.get('foo');
 get all meta value that key matched
 
 ```js
-MetaData.insert('name','boo');
-MetaData.insert('name','foo');
+meteData.insert('name','boo');
+meteData.insert('name','foo');
 
-MetaData.getAll('name');
+meteData.getAll('name');
 >>[{name:'boo'},{name:'foo'}]
 
 ```
@@ -63,18 +63,18 @@ MetaData.getAll('name');
 #### update(id,key,value)
 
 ```js
-MetaData.update(1,'name','jack');
+meteData.update(1,'name','jack');
 ```
 
 #### remove(id) - remove by id
 ```js
-MetaData.remove("5d64d7ed72bcd714f168976d");
+meteData.remove("5d64d7ed72bcd714f168976d");
 ```
 
 #### removeByKey(key) 
 
 ```js
-MetaData.removeByKey('name');
+meteData.removeByKey('name');
 ```
 
 
