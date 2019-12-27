@@ -31,7 +31,7 @@ module.exports = MetaData = (function(){
         }
 
         async function update(id, key, value){
-            const meta = await Metadata.updateOne({id:id},{
+            const meta = await Metadata.update({id:id},{
                 key:key,
                 value:value
             },{new:true});
