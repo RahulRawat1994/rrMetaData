@@ -31,12 +31,18 @@ module.exports = MetaData = (function(){
         }
 
         async function update(id, key, value){
-            const meta = await Metadata.update({id:id},{
-                key:key,
-                value:value
-            },{new:true});
+            let meta = await Metadata.findById(id);
+            meta.key = key;
+            meta.value = value;
+            meta = await meta.save();
             return meta
+        }
 
+        async function updateByKey(key, value){
+            const meta = await Metadata.updateMany({key:key},{
+                value:value
+            });
+            return meta
         }
 
         async function remove(id){
